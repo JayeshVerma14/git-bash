@@ -74,3 +74,48 @@ git verify
 git start change-branch-history
 git rebase hot-bugfix
 ```
+# remove-ignored
+```
+git start remove-ignored
+git rm ignored.txt
+git add .
+git commit -m "changed"
+git verify
+
+```
+# case-sensitive-filename
+```
+git start case-sensitive-filename
+git mv File.txt file.txt
+git add .
+git commit -m "lowercase-done"
+git verify
+```
+
+# fix-typo
+```
+git start fix-typo
+cat file.txt
+
+```
+Correct spelling mistake
+
+```
+$ vim file.txt
+git add .
+git commit --amend -m "Add Hello world"
+git verify
+
+```
+
+# forge-date
+```
+git start forge-date
+git commit --amend --date="1987" -m "date"
+git verify
+```
+# fix-old-typo
+```
+git start fix-old-typo
+```
+
