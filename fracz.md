@@ -36,7 +36,7 @@ git verify
 ```
 git start ignore-them
 touch .gitignore
-
+```
 ```
 git add .
 git commit -m "ignored"
@@ -139,12 +139,10 @@ Utilized git commit --amend --date=1987-07-07T20:20:20 to modify the date of the
 
 # fix-old-typo
 
-Used git rebase -i HEAD^^ to move back 2 commits. Replaced 'pick' with 'edit' for the target commit, making changes to it. After modifying 'file.txt', committed changes with git commit --amend and altered the commit message. Resumed rebase with git rebase --continue, resolved merge conflict, staged 'file.txt', and finished rebase.
-
-
 ```
 git rebase -i HEAD^^
 git commit --amend
 git rebase --continue
 git add file.txt
 ```
+Used git rebase -i HEAD^^ to move back 2 commits. Replaced 'pick' with 'edit' for the target commit, making changes to it. After modifying 'file.txt', committed changes with git commit --amend and altered the commit message. Resumed rebase with git rebase --continue, resolved merge conflict, staged 'file.txt', and finished rebase.
