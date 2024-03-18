@@ -40,6 +40,7 @@ git commit -m "ignored"
 git verify
 ```
 # chase-branch
+First getting all the list of branches and then merging them.
 ```
 git start chase-branch
 git branch
@@ -49,6 +50,7 @@ git verify
 ```
 
 # git start merge-conflict
+Checking first what is causing merging conflict and then deleting unneccessary lines.
 ```
 git merge
 ls
@@ -59,6 +61,7 @@ git commit -m "trying-again"
 git verify
 ```
 # save-your-work
+Using git stash to save the work.
 ```
 git start save-your-work
 git stash
@@ -75,6 +78,7 @@ git start change-branch-history
 git rebase hot-bugfix
 ```
 # remove-ignored
+Using git rm to remove files.
 ```
 git start remove-ignored
 git rm ignored.txt
